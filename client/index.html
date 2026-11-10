@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#0B0F17" />
+  <title>GharDekho 🏠 | India's Trusted Student & Professional Rental Marketplace</title>
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Mobile Device Simulator Frame -->
+  <main class="device-shell" id="deviceShell">
+    
+    <!-- App Header Sticky -->
+    <header class="app-header">
+      <div class="header-top">
+        <div class="brand-container">
+          <div class="brand-logo">🏠</div>
+          <div class="brand-name">Ghar<span>Dekho</span></div>
+        </div>
+
+        <div style="display: flex; align-items: center;">
+          <!-- Role Switcher -->
+          <div class="role-toggle-group">
+            <button class="role-btn active" id="roleTenantBtn">Kirayedaar</button>
+            <button class="role-btn" id="roleOwnerBtn">Owner</button>
+          </div>
+          <!-- Viewport Mode Toggle -->
+          <button class="viewport-btn" id="viewportBtn" onclick="GharDhundo.toggleViewport()" title="Toggle Mobile / Wide View">
+            💻 Wide
+          </button>
+        </div>
+      </div>
+
+      <!-- Location Indicator & City Quick Select -->
+      <div class="location-row">
+        <div class="location-pill" id="cityPill" onclick="GharDhundo.resetFilters()">
+          📍 All Cities
+        </div>
+        <div style="font-size: 11px; color: var(--text-muted);">
+          Kota • Pune • Jaipur • Delhi
+        </div>
+      </div>
+
+      <!-- Search Input Bar -->
+      <div class="search-bar-wrap">
+        <div class="search-input-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="searchInput" placeholder="Search by coaching, metro, locality (e.g. Allen, Hinjawadi)..." />
+        </div>
+        <button class="filter-btn-trigger" onclick="GharDhundo.resetFilters()" title="Reset Filters">
+          ⚙️
+        </button>
+      </div>
+    </header>
+
+    <!-- Quick Horizontal Filter Chips -->
+    <nav class="quick-chips-row" id="quickChips" aria-label="Quick Filters">
+      <button class="chip active" onclick="GharDhundo.setCity('All')">All</button>
+      <button class="chip" onclick="GharDhundo.setCity('Kota')">🎯 Kota (NEET/JEE)</button>
+      <button class="chip" onclick="GharDhundo.setCity('Pune')">💼 Pune (IT Hub)</button>
+      <button class="chip" onclick="GharDhundo.setCity('Jaipur')">🎓 Jaipur (College)</button>
+      <button class="chip" onclick="GharDhundo.setCity('Delhi')">🏛️ Delhi (Metro)</button>
+    </nav>
+
+    <!-- Main Scrollable App Content View -->
+    <section class="app-content" id="appContent">
+      <!-- Injected dynamically by app.js -->
+    </section>
+
+    <!-- Bottom Navigation Bar (Thumb Friendly) -->
+    <nav class="bottom-nav" id="bottomNav" aria-label="Bottom Navigation">
+      <button class="nav-item active" onclick="GharDhundo.setTab('khojo')">
+        <span class="nav-icon">🏠</span>
+        <span>Khojo</span>
+      </button>
+      <button class="nav-item" onclick="GharDhundo.setTab('map')">
+        <span class="nav-icon">🗺️</span>
+        <span>Map</span>
+      </button>
+      <button class="nav-item" onclick="GharDhundo.setTab('saved')">
+        <span class="nav-icon">❤️</span>
+        <span>Saved</span>
+      </button>
+      <button class="nav-item" onclick="GharDhundo.setTab('messages')">
+        <span class="nav-icon">💬</span>
+        <span>Chat</span>
+      </button>
+      <button class="nav-item" onclick="GharDhundo.setTab('profile')">
+        <span class="nav-icon">👤</span>
+        <span>Profile</span>
+      </button>
+    </nav>
+
+  </main>
+
+  <!-- Detailed Property Bottom Sheet Modal -->
+  <div class="modal-overlay" id="detailModal">
+    <div class="detail-sheet" id="modalContent">
+      <!-- Injected dynamically on click -->
+    </div>
+  </div>
+
+  <!-- Toast Notification Message -->
+  <div class="toast-msg" id="toastMsg"></div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
+

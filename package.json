@@ -1,0 +1,22 @@
+{
+  "name": "ghardekho",
+  "version": "1.0.0",
+  "description": "GharDekho - Mobile-First Indian Rental Property Marketplace for Students & Professionals",
+  "main": "server/src/index.js",
+  "scripts": {
+    "start": "node server/src/index.js",
+    "dev": "node server/src/index.js"
+  },
+  "keywords": [
+    "rental",
+    "pg",
+    "hostel",
+    "india",
+    "students",
+    "room-sharing",
+    "maps",
+    "ghardekho"
+  ],
+  "author": "GharDekho Team",
+  "license": "MIT"
+}

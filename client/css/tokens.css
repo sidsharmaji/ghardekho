@@ -1,0 +1,71 @@
+/* GharDhundo Design System — Mix A + C (Warm Saffron Energy on Deep Dark Slate) */
+:root {
+  /* Canvas & Surfaces */
+  --bg-canvas: #0B0F17;
+  --bg-surface: #151D2A;
+  --bg-surface-raised: #1E293B;
+  --bg-surface-hover: #26354D;
+  --bg-glass: rgba(21, 29, 42, 0.85);
+
+  /* Boundaries & Lines */
+  --border-subtle: #27354A;
+  --border-medium: #374B69;
+  --border-focus: #FF6B00;
+
+  /* Primary Brand: Saffron Orange Energy */
+  --color-primary: #FF6B00;
+  --color-primary-hover: #E05D00;
+  --color-primary-active: #C44F00;
+  --color-primary-subtle: rgba(255, 107, 0, 0.15);
+  --color-primary-glow: rgba(255, 107, 0, 0.25);
+  --gradient-primary: linear-gradient(135deg, #FF6B00 0%, #FF8B26 100%);
+  --on-primary: #FFFFFF;
+
+  /* Trust & Semantic Accents */
+  --color-trust: #10B981;          /* Emerald for verified Makan Maalik & safe spaces */
+  --color-trust-subtle: rgba(16, 185, 129, 0.15);
+  --color-student: #8B5CF6;        /* Purple for student deals & split sharing */
+  --color-student-subtle: rgba(139, 92, 246, 0.15);
+  --color-warning: #F59E0B;        /* Amber for Jal timing & restrictions */
+  --color-warning-subtle: rgba(245, 158, 11, 0.15);
+  --color-danger: #EF4444;
+  --color-danger-subtle: rgba(239, 68, 68, 0.15);
+
+  /* Typography Colors */
+  --text-primary: #F8FAFC;
+  --text-secondary: #94A3B8;
+  --text-muted: #64748B;
+  --text-inverse: #0B0F17;
+
+  /* Fonts */
+  --font-display: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Spacing Scale (4px base) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+
+  /* Radii */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 26px;
+  --radius-full: 9999px;
+
+  /* Elevation & Shadows */
+  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 6px 18px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.6);
+  --shadow-glow: 0 0 20px rgba(255, 107, 0, 0.3);
+
+  /* Safe Area Mobile */
+  --bottom-bar-height: 68px;
+}
+
